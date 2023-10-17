@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-sentinel" />
+        <module name="cloud-product" />
+        <module name="cloud-user" />
+        <module name="commons" />
+        <module name="cloud-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-gateway" options="-parameters" />
+      <module name="cloud-product" options="-parameters" />
+      <module name="cloud-sentinel" options="-parameters" />
+      <module name="cloud-user" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="springCloudAlibaba" options="" />
+    </option>
+  </component>
+</project>

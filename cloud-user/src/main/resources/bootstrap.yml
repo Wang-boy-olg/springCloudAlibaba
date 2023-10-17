@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        namespace: 0a33f421-28e0-43a2-a4d7-4146bd34b1d5
+        group: dev
+      config:
+        file-extension: yaml
+        namespace: 0a33f421-28e0-43a2-a4d7-4146bd34b1d5
+  application:
+    name: cloud-user

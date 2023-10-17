@@ -1,0 +1,5 @@
+# Project exclude paths
+/cloud-gateway/target/
+/cloud-product/target/
+/cloud-user/target/
+/commons/target/
