@@ -14,5 +14,3 @@ spring:
         namespace: 0a33f421-28e0-43a2-a4d7-4146bd34b1d5
   application:
     name: cloud-user
-
-Update failed unable to access 'https://github.com/Wang-boy-olg/springCloudAlibaba.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
