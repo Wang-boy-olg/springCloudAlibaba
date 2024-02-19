@@ -1,7 +1,7 @@
 package com.wangxu.filter;
 
 import com.wangxu.properties.VerifyWhite;
-import org.apache.commons.collections4.CollectionUtils;
+
 import org.example.utils.ServletUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

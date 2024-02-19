@@ -1,5 +1,6 @@
 package com.wangxu.filter;
 
+import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.text.UnicodeUtil;
 import cn.hutool.crypto.SmUtil;
 import cn.hutool.crypto.asymmetric.KeyType;
@@ -10,7 +11,6 @@ import io.netty.buffer.ByteBufAllocator;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.commons.collections4.CollectionUtils;
 import org.example.utils.EncryptException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -86,7 +86,7 @@ public class AuthorizeGatewayFilterFactory extends AbstractGatewayFilterFactory<
             ServerHttpRequest request = exchange.getRequest();
             //白名单不做校验
             List<String> StrList = verifyWhite.getWhite();
-            if (CollectionUtils.isNotEmpty(StrList)){
+            if (CollectionUtil.isNotEmpty(StrList)){
                 String pathWhite = String.join(",", StrList);
                 if (pathWhite.contains(request.getURI().getPath())){
                     return chain.filter(exchange);
